@@ -87,13 +87,18 @@ body {
           align-items: center;
   border-radius: 4px;
   border: 1px solid rgba(17, 17, 17, 0.31);
-  border-style: solid;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 @media (max-width: 991px) {
   .navigation-right button {
     display: none;
   }
+}
+
+.navigation-right button:hover {
+  border: 4px solid violet;
 }
 
 .menu img {
@@ -200,6 +205,10 @@ body {
   border-radius: 4px;
   margin: 35px 0 0 0;
   border: none;
+}
+
+.main-container-left button:hover {
+  border: 4px solid violet;
 }
 
 .main-container-right {
